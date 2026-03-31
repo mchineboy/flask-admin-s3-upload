@@ -1,4 +1,4 @@
-__version__ = '0.1.4'
+__version__ = '0.1.5'
 
 
 try:
@@ -11,9 +11,9 @@ from io import BytesIO
 import os
 import os.path as op
 import re
+from urllib.parse import urljoin
 
 import boto3
-from io import BytesIO
 
 from werkzeug.datastructures import FileStorage
 
@@ -21,7 +21,6 @@ from wtforms import ValidationError
 
 from flask_admin.form.upload import FileUploadField, ImageUploadInput, \
     thumbgen_filename
-from flask_admin._compat import urljoin
 
 from url_for_s3 import url_for_s3
 

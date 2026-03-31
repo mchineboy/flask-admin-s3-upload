@@ -23,7 +23,8 @@ setuptools.setup(
     zip_safe=False,
     platforms='any',
 
-    install_requires=['Flask-Admin', 'url-for-s3', 'boto3', 'urllib3'],
+    install_requires=['Flask-Admin>=2', 'url-for-s3', 'boto3', 'urllib3'],
+    python_requires='>=3.9',
 
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
@@ -31,9 +32,10 @@ setuptools.setup(
         'Intended Audience :: Developers',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.3',
+        'Programming Language :: Python :: 3 :: Only',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
     ],
 )
